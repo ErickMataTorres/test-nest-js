@@ -4,9 +4,7 @@ import { Usuario } from './Clase/user.interface';
 
 @Controller('users')
 export class UsersController {
-    //C:\Users\ABCDE\OneDrive\Documentos\a\AngularNestJs\test-nest-js\src\usersData.json
-    private readonly usersDataArchivo = 'C:/Users/ABCDE/OneDrive/Documentos/a/AngularNestJs/test-nest-js/src/usersData.json';
-
+    private readonly usersDataArchivo = 'src/data/usersData.json';
     @Get('todosUsuarios')
     todosUsuarios(): any[] {
         const datos = fs.readFileSync(this.usersDataArchivo, 'utf8');
