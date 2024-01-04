@@ -5,7 +5,7 @@ import { Usuario } from './Clase/user.interface';
 @Controller('users')
 export class UsersController {
     // Variable para leer el archivo json
-    private readonly usersDataArchivo = 'src/data/usersData.json';
+    private readonly usersDataArchivo = 'src/controllers/users/data/usersData.json';
     // Consultar todos los usuarios del archivo json
     @Get('todosUsuarios')
     todosUsuarios(): any[] {
